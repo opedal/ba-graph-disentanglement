@@ -29,11 +29,11 @@ The code for generating the data, building and running the experiments can be fo
 
 
 1. Standard BA graphs with fixed number of nodes (50), and varying parameter m (varying uniformly at random from 1 to 49). Set `NB_BARABASI_PARAM = 2` and `EXPERIMENT = "standard"`.
-2. Nonlinear BA graphs with alpha varying uniformly at random between 1/3 and 3. Set `NB_BARABASI_PARAM = 3` and `EXPERIMENT = "non-linear"`. The graph generation for this experiment is computationally expensive (more than 2 hours).
+2. Nonlinear BA graphs with alpha varying uniformly at random between 1/3 and 3. Set `NB_BARABASI_PARAM = 3` and `EXPERIMENT = "non-linear"`. The graph generation for this experiment is time-consuming, so we provide the data via a link below.
 
 The architecture implemented for the encoder is defined in the `train_multi_gnn_model` function. Additional functions are included for plotting different graph measures, like Figures 3 and 4 from the paper.
 
-For reproducing our results for experiments 1 and 2, set random seed to 0 and use [this](https://drive.google.com/drive/folders/1pTRsN76DZQ0JoqRvgW-s6RBiz19ngquj) dataset for experiment 3. Further details can be found in the notebook itself.
+For reproducing our results for experiments 1, set random seed to 0 and use [this](https://drive.google.com/drive/folders/1pTRsN76DZQ0JoqRvgW-s6RBiz19ngquj) dataset for experiment 2. Further details can be found in the notebook itself.
 
 ## LSTM VAE
 
