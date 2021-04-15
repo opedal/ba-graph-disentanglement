@@ -1,6 +1,6 @@
 # Recovering Barabási-Albert Parameters of Graphs through Disentanglement
 
-This repo contains the code referred to in the paper [ADD LINK].
+This repo contains the code referred to in the paper [ADD ARXIV LINK].
 
 Below you will find the details for setting up and running the codes for the following 
 models:
