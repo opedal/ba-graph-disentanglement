@@ -88,5 +88,3 @@ class MIG():
                     m[i, j] = mutual_info_score(np.squeeze(self.v), self.z[i, :])
 
         return m
-
-    
