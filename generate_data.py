@@ -5,7 +5,6 @@ from networkx.generators import erdos_renyi_graph
 from barabasi_albert import barabasi_albert_graph
 from utils import preprocess_adj_tensor_with_identity, preprocess_adj_tensor
 from sklearn.utils import shuffle
-## Progress bar for graph generation
 from tqdm import tqdm
 
 def generate_data(num_graphs, n, num_params, sym_norm=True, num_filters=1,):

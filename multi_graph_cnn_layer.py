@@ -3,8 +3,7 @@ from keras import regularizers
 import keras.backend as K
 from keras.engine.topology import Layer
 import tensorflow as tf
-#from .graph_ops import graph_conv_op
-from graph_ops import graph_conv_op
+from utils import graph_conv_op
 
 class MultiGraphCNN(Layer):
 
