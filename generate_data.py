@@ -160,3 +160,24 @@ def generate_er_nx_graphs(num_graphs,n):
         er_graphs.append(erdos_renyi_graph(n,p))
 
     return er_graphs
+
+def format_data(A, X, Y):
+    """
+    Format the data such that it is a matrix of matrices (a batch containing sample matrices)
+    """
+
+    # Load and prepare the adjacency matrices
+    num_graph_nodes = A.shape[1]
+    num_graphs = int(A.shape[0]/A.shape[1])
+
+    A = np.split(A, num_graphs, axis=0)
+    A = np.array(A)
+
+    # Load and prepare the feature matrices
+    X = np.split(X, num_graphs, axis=0)
+    X = np.array(X)
+
+    # Shuffle data before training
+    A, X, Y = shuffle(A, X, Y)
+    
+    return A, X, Y 
